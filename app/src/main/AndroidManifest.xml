@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sudox.nightd"
-    android:versionCode="2"
-    android:versionName="1.1">
+    android:versionCode="3"
+    android:versionName="1.2">
 
     <uses-sdk android:minSdkVersion="24" android:targetSdkVersion="35" />
 
@@ -37,6 +37,18 @@
                 <action android:name="com.sudox.nightd.BLACK" />
             </intent-filter>
         </service>
+
+        <receiver
+            android:name=".NightdReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.sudox.nightd.TOGGLE" />
+                <action android:name="com.sudox.nightd.ON" />
+                <action android:name="com.sudox.nightd.OFF" />
+                <action android:name="com.sudox.nightd.DIM" />
+                <action android:name="com.sudox.nightd.BLACK" />
+            </intent-filter>
+        </receiver>
 
         <activity
             android:name=".NightdActivity"
