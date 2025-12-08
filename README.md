@@ -1,6 +1,8 @@
 <div align="center">
 
-# 🌙 nightd
+<img src="icon.png" width="128" height="128" alt="nightd icon">
+
+# nightd
 
 **screen dimmer for android tv**
 
